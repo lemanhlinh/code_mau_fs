@@ -1,0 +1,294 @@
+.productslist-default {
+	padding         : 15px;
+	background-color: #f3f3f3;
+	float           : left;
+	width           : 100%;
+	.block_title {
+		font-size     : 25px;
+		line-height   : 30px;
+		text-transform: uppercase;
+		font-weight   : normal;
+		margin-bottom : 20px;
+		a {
+			color: #333333;
+		}
+	}
+	.col-xs-6 {
+		padding-left : 5px;
+		padding-right: 5px;
+	}
+	.row {
+		margin-left : -5px;
+		margin-right: -5px;
+	}
+	.item-product {
+		float           : left;
+		width           : 100%;
+		text-align      : center;
+		padding         : 14px 10px;
+		margin-bottom   : 10px;
+		position        : relative;
+		background-color: #fff;
+		&:after {
+			content   : "";
+			background: url("../images/icon-sale.png") no-repeat center center;
+			position  : absolute;
+			width     : 38px;
+			height    : 38px;
+			bottom    : 20px;
+			right     : 20px;
+		}
+	}
+}
+.productslist-related {
+	@media (min-width: 768px) {
+		padding: 30px 0 70px;
+	}
+	@media (max-width: 767px) {
+		padding: 30px 0;
+	}
+	.block_title {
+		max-width     : 1000px;
+		font-size     : 36px;
+		color         : #d3261e;
+		font-weight   : normal;
+		line-height   : 40px;
+		text-transform: uppercase;
+		border-bottom : 4px solid;
+		padding-bottom: 14px;
+		@media (min-width: 768px) {
+			max-width: 750px;
+			margin   : 0 auto 30px;
+		}
+		@media (min-width: 992px) {
+			max-width: 970px;
+		}
+		@media (min-width: 1200px) {
+			max-width: 1000px;
+		}
+		@media (max-width: 767px) {
+			margin-left  : 10px;
+			margin-right : 10px;
+			margin-bottom: 20px;
+		}
+		a {}
+	}
+	.products-item {
+		background-color: #f3f3f3;
+		@media (min-width: 768px) {
+			padding: 10px;
+			img {
+				margin-bottom: 10px;
+			}
+		}
+		@media (max-width: 767px) {
+			padding: 10px;
+		}
+		.name {
+			@media (min-width: 768px) {
+				font-size  : 20px;
+				line-height: 30px;
+			}
+			@media (max-width: 767px) {
+				font-size  : 14px;
+				line-height: 22px;
+			}
+			color             : #444444;
+			font-weight       : normal;
+			height            : 60px;
+			overflow          : hidden;
+			display           : -webkit-box;
+			-webkit-box-orient: vertical;
+			text-overflow     : ellipsis;
+			-webkit-line-clamp: 2;
+		}
+	}
+	//background-color: #f3f3f3;
+	.owl-controls {
+		.owl-nav {
+			> div {
+				position   : absolute;
+				height     : 80px;
+				width      : 50px;
+				background : url("../images/controls-slide2.png") no-repeat;
+				top        : 35%;
+				opacity    : 0.7;
+				text-indent: -99999px;
+				&:hover {
+					opacity: 1;
+				}
+			}
+			.owl-prev {
+				left               : -90px;
+				background-position: 0 0;
+			}
+			.owl-next {
+				right              : -90px;
+				background-position: -152px 0;
+			}
+		}
+	}
+}
+.productslist-slideshow {
+	background-color: #f3f3f3;
+	@media (min-width: 1200px) {
+		//background: url('../images/bk-hutmui.jpg') repeat-x center center;
+		padding: 20px 0;
+	}
+	@media (max-width: 1199px) {
+		padding: 20px 0;
+	}
+	.products-item {
+		background-color: #fff;
+	}
+}
+.productslist-slideshow2 {
+	@media (min-width: 1200px) {
+		//background: url('../images/bk-hutmui.jpg') repeat-x center center;
+		padding: 20px 0;
+	}
+	@media (max-width: 1199px) {
+		padding: 20px 0;
+	}
+	.products-item {
+		background-color: #f3f3f3;
+	}
+}
+.productslist-slideshow,
+.productslist-slideshow2 {
+	position: relative;
+	//background-color: #f3f3f3;
+	.owl-controls {
+		.owl-nav {
+			> div {
+				position   : absolute;
+				height     : 80px;
+				width      : 50px;
+				background : url("../images/controls-slide.png") no-repeat;
+				top        : 50%;
+				opacity    : 0.7;
+				text-indent: -99999px;
+				&:hover {
+					opacity: 1;
+				}
+			}
+			.owl-prev {
+				left               : -90px;
+				background-position: 0 0;
+			}
+			.owl-next {
+				right              : -90px;
+				background-position: -152px 0;
+			}
+		}
+	}
+	.block_title {
+		font-size     : 30px;
+		line-height   : 40px;
+		text-align    : center;
+		max-width     : 1140px;
+		margin        : 0 auto;
+		text-transform: uppercase;
+		font-weight   : normal;
+		margin-bottom : 30px;
+		a {
+			span {
+				@media (max-width: 1199px) {
+					color: #333333 !important;
+				}
+			}
+		}
+	}
+	.products-item {
+		//background-color: #f3f3f3;
+		width: 100%;
+		@media (min-width: 768px) {
+			padding: 10px;
+		}
+		@media (max-width: 767px) {
+			padding: 10px;
+		}
+		.code {
+			background-color: #d3261e;
+			position        : relative;
+			display         : inline-block;
+			position        : relative;
+			white-space     : nowrap;
+			text-overflow   : ellipsis;
+			@media (min-width: 768px) {
+				margin-left  : -10px;
+				margin-bottom: 15px;
+				padding      : 0 40px 0 10px;
+				line-height  : 36px;
+				font-size    : 12px;
+				span {
+					font-size: 16px;
+				}
+			}
+			@media (max-width: 767px) {
+				margin-bottom: 10px;
+				margin-left  : -10px;
+				width        : 100%;
+				padding      : 10px;
+				span {
+					font-size: 14px;
+				}
+			}
+			span {
+				//padding-left: 32px;
+				color      : #ffffff;
+				font-weight: bold;
+			}
+			&:after {
+				background       : none repeat scroll 0 0 #f3f3f3;
+				content          : "";
+				display          : block;
+				height           : 100%;
+				position         : absolute;
+				right            : -14px;
+				top              : 0;
+				width            : 28px;
+				transform        : rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+				-webkit-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+				-moz-transform   : rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+				-o-transform     : rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+				-ms-transform    : rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+			}
+		}
+		.name {
+			line-height       : 22px;
+			overflow          : hidden;
+			color             : #5e5e5e;
+			height            : 44px;
+			text-transform    : uppercase;
+			font-family       : "OxyVietnam";
+			overflow          : hidden;
+			display           : -webkit-box;
+			-webkit-box-orient: vertical;
+			text-overflow     : ellipsis;
+			-webkit-line-clamp: 2;
+			@media (min-width: 768px) {
+				font-size    : 16px;
+				margin-bottom: 10px;
+			}
+			@media (max-width: 767px) {
+				font-size: 14px;
+			}
+		}
+		.summary {
+			color             : #5e5e5e;
+			overflow          : hidden;
+			font-family       : "OxyVietnam";
+			height            : 40px;
+			font-size         : 18px;
+			display           : -webkit-box;
+			-webkit-box-orient: vertical;
+			text-overflow     : ellipsis;
+			-webkit-line-clamp: 2;
+			line-height       : 20px;
+			@media (max-width: 480px) {
+				display: none;
+			}
+		}
+	}
+}

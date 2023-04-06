@@ -1,0 +1,286 @@
+// @font-face {
+//   font-family: 'lg';
+//   src: url("../fonts/lg.eot?n1z373");
+//   src: url("../fonts/lg.eot?#iefixn1z373") format("embedded-opentype"), url("../fonts/lg.woff?n1z373") format("woff"), url("../fonts/lg.ttf?n1z373") format("truetype"), url("../fonts/lg.svg?n1z373#lg") format("svg");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+.products_detail {
+	margin-top: 10px;
+	.name-products {
+		font-size     : 30px;
+		text-transform: uppercase;
+		font-weight   : normal;
+		line-height   : 35px;
+		font-family   : "Roboto Condensed";
+		margin-bottom : 12px;
+	}
+	.summary-products {
+		font-size    : 13px;
+		font-weight  : 600;
+		line-height  : 20px;
+		text-align   : justify;
+		margin-bottom: 16px;
+	}
+	.col-products-info {
+		overflow: hidden;
+	}
+	.col-products-tabs {
+		border: 1px solid #dddddd;
+	}
+	.lSAction > a {
+		@media (max-width: 360px) {
+			bottom: -40px;
+		}
+	}
+	.col-products-images {
+		@media (min-width: 1200px) {
+			width      : 510px;
+			margin-left: 28px;
+		}
+		@media (max-width: 1199px) {
+			max-width: 510px;
+			float    : none;
+			margin   : 0 auto;
+		}
+	}
+	.lSSlideWrapper img {
+		max-width: 100% !important;
+		height   : auto !important;
+	}
+	.product-tab-title {
+		background-color: #f5f5f5;
+		border-bottom   : 1px solid #dddddd;
+		ul {
+			li {
+				line-height: 36px;
+				position   : relative;
+				top        : 1px;
+				padding    : 0 18px;
+				float      : left;
+				cursor     : pointer;
+				@media (min-width: 581px) {
+					border-right: 1px solid #dddddd;
+				}
+				@media (max-width: 580px) {
+					width        : 100%;
+					text-align   : center;
+					font-size    : 15px;
+					border-bottom: 1px solid #dddddd;
+				}
+				a {
+					font-weight: 600;
+				}
+			}
+			li.activated {
+				background-color: #ffffff;
+				a {
+					color: #cb1517;
+				}
+			}
+			#tab4 {
+				border-right: none;
+			}
+		}
+	}
+	.product_tab_content {
+		padding    : 15px;
+		overflow   : auto;
+		line-height: 20px;
+		@media (min-width: 768px) {
+			height: 538px;
+		}
+		@media (max-width: 767px) {}
+		p {
+			padding-top   : 5px;
+			padding-bottom: 5px;
+		}
+		ul {
+			list-style  : inherit;
+			padding-left: 20px;
+		}
+		img {
+			max-width: 100% !important;
+			height   : auto !important;
+		}
+	}
+	.products-categories-related {
+		@media (min-width: 768px) {
+			margin-top: 40px;
+		}
+		@media (max-width: 767px) {
+			margin-top: 20px;
+			.row {
+				margin-left : -5px;
+				margin-right: -5px;
+			}
+			.col-xs-4 {
+				padding-left : 5px;
+				padding-right: 5px;
+			}
+		}
+		@media (max-width: 500px) {
+			.col-xs-4 {
+				width: 100%;
+			}
+		}
+		.relate_title {
+			font-size     : 30px;
+			text-transform: uppercase;
+			font-weight   : normal;
+			line-height   : 35px;
+			font-family   : "Roboto Condensed";
+			margin-bottom : 12px;
+		}
+		.col-item {
+			text-align   : center;
+			margin-bottom: 10px;
+			width        : 100%;
+			.col-img {
+				position: relative;
+				.title-pro {
+					font-size       : 15px;
+					line-height     : 36px;
+					color           : #ffffff;
+					position        : absolute;
+					background-color: rgba(0, 0, 0, 0.58);
+					left            : 0;
+					width           : 100%;
+					bottom          : 0;
+					font-weight     : normal;
+					white-space     : nowrap;
+					overflow        : hidden;
+					padding         : 0 10px;
+					text-overflow   : ellipsis;
+				}
+			}
+			.col-new {
+				&:before {
+					position     : absolute;
+					left         : 0;
+					top          : 0;
+					content      : "";
+					border-left  : 50px solid #d2161b;
+					border-bottom: 50px solid transparent;
+					z-index      : 8;
+				}
+				&:after {
+					position         : absolute;
+					left             : 4px;
+					top              : 7px;
+					content          : "New";
+					font-size        : 12px;
+					z-index          : 9;
+					color            : #ffffff;
+					font-weight      : 400;
+					transform        : rotate(-46deg);
+					-moz-transform   : rotate(-46deg);
+					-webkit-transform: rotate(-46deg);
+					-o-transform     : rotate(-46deg);
+				}
+			}
+			&:hover {
+				.title-pro {
+					background-color: rgba(204, 0, 0, 0.69);
+				}
+			}
+		}
+	}
+	.silde-img {
+		margin-bottom: 20px;
+	}
+	.form_comment {
+		border : 1px solid #d6d6d6;
+		padding: 10px;
+		.message {
+			margin-bottom: 16px;
+			height       : 78px;
+			border       : 1px solid #e4d8d8;
+		}
+		label {
+			display      : block;
+			font-size    : 16px;
+			line-height  : 22px;
+			width        : 100%;
+			margin-bottom: 12px;
+		}
+		input[type="text"] {
+			border     : 1px solid #d3d3d3;
+			color      : #777777;
+			line-height: 22px;
+			float      : left;
+		}
+		.txt_input {
+			width: 100%;
+		}
+		.button {
+			font-size     : 20px;
+			height        : 34px;
+			padding       : 0 15px;
+			font-weight   : 500;
+			line-height   : 34px;
+			color         : #fff;
+			background    : #580f12;
+			border        : solid 1px #580f12;
+			z-index       : 1;
+			border-radius : 4px;
+			vertical-align: middle;
+			cursor        : pointer;
+			position      : relative;
+			float         : right;
+			margin-left   : 10px;
+			@media (max-width: 480px) {
+				width     : 100%;
+				margin-top: 10px;
+				text-align: center;
+			}
+		}
+	}
+	.comments {
+		margin-bottom: 20px;
+		.comment-item {
+			padding-left : 35px;
+			margin-bottom: 10px;
+		}
+		.comment_level_0 {
+			padding-left: 0;
+			background  : none;
+		}
+		.comments_contents {
+			//background: #F1F1F1;
+			margin-bottom: 20px;
+			padding      : 10px;
+			.item-comment {
+				.name {
+					color       : #22221D;
+					font-weight : bold;
+					line-height : 28px;
+					margin-right: 20px;
+					img {
+						margin-right: 10px;
+					}
+				}
+			}
+			.content {
+				line-height  : 20px;
+				font-size    : 15px;
+				margin-bottom: 10px;
+			}
+		}
+		.comment_content {
+			padding-left : 35px;
+			margin-bottom: 10px;
+			._control {
+				font-size: 11px;
+			}
+			.button_reply {
+				color       : #498FE1;
+				margin-right: 10px;
+			}
+			.date {
+				color: #B3B5B2;
+			}
+		}
+	}
+}
+

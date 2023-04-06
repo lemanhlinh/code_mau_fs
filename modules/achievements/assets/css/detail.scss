@@ -1,0 +1,36 @@
+.contents {
+  .title {
+    font-size: 20px;
+    color: #144b97;
+    line-height: 25px;
+    border-bottom: 2px solid;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    // font-family: "UTMAvoBold";
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+
+    img {
+      max-width: 100% !important;
+      height: auto !important;
+    }
+  }
+  .bt-clickform{
+    display: inline-block;
+    padding: 0 36px;
+    margin: 5px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    font-weight: normal;
+    background-color: #144b97;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+}

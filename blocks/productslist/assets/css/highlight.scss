@@ -1,0 +1,224 @@
+.productslist-highlight{
+	position: relative;
+	text-align: center;
+	@media (min-width: 1200px){
+	    max-width: 1351px;
+	}
+    margin-right: auto;
+    margin-left: auto;
+    .block_title {
+	    font-size: 36px;
+	    line-height: 40px;
+	    text-transform: uppercase;
+	    font-weight: normal;
+	    @media (min-width: 1200px){
+		    position: absolute;
+		    top: 40px;
+		    left: 130px;
+		}
+	}
+	.name{
+	    text-align: center;
+		a{
+			color: #bd190d;
+		}
+	}
+	@media (max-width: 1199px){
+	    padding: 40px 0px;
+		>.img-responsive{
+			display: none;
+		}
+		.products-item{
+			display: block !important;
+			float: left;
+			width: 50%;
+			padding: 10px;
+			>div{
+
+			}
+			.name{
+			    font-size: 18px;
+			    line-height: 22px;
+			    height: 44px;
+			    overflow: hidden;
+			    text-align: center;
+		        display: -webkit-box;
+			    -webkit-box-orient: vertical;
+			    text-overflow: ellipsis;
+			    -webkit-line-clamp: 2;
+			}
+		}
+	}
+	@media (min-width: 1200px){	
+		.name{
+		    font-size: 23px;
+		    line-height: 30px;
+		    max-width: 200px;
+		    margin: 0px auto;
+		}
+		.products-item {
+		    position: absolute;
+		    left: 0px;
+		    top: 0px;
+		    .row-item{
+		    	position: relative;
+		    }
+		}
+		.item-0 {
+		    top: 90px;
+		    left: 370px;
+		    max-width: 250px;
+		}
+		.item-1 {
+		    top: 428px;
+		    left: 88px;
+		    max-width: 320px;
+		    .name {
+			    position: absolute;
+			    top: 0px;
+			    width: 100%;
+			    left: 0px;
+			    right: 0px;
+			}
+		}
+		.item-2 {
+	        max-width: 270px;
+		    top: 920px;
+		    left: 205px;
+		    .name {
+			    position: absolute;
+			    top: 0px;
+			    width: 100%;
+			    left: 0px;
+			    right: 0px;
+			}
+		}
+	}
+}
+// END.block_style_highlight
+.productslist-default{
+	padding-left: 8px;
+	padding-right: 8px;
+	background-color: #ffffff;
+	margin-bottom: 16px;
+    border-bottom: 1px solid #cccccc;
+	.block_title {
+	    color: #b21413;
+	    font-size: 15px;
+	    text-transform: uppercase;
+	    font-family: "MyriadPro-Bold";
+	    line-height: 25px;
+	    padding: 5px 0px;
+	    border-bottom: 1px solid #e1e1e1;
+	    margin-bottom: 10px;
+	    span {
+		    padding-right: 18px;
+		    background: url("../images/icon-title.png") no-repeat right center;
+		}
+	}
+	.title{
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.new-time{
+		color: #999999;
+		line-height: 20px;
+	}
+	.new-item{
+		width: 100%;
+		img{
+			margin-right: 8px;
+		}
+	}
+}
+// END.default
+
+.productslist-grid{
+	padding-left: 8px;
+	padding-right: 8px;
+	background-color: #ffffff;
+	margin-bottom: 16px;
+    border-bottom: 1px solid #cccccc;
+	.block_title {
+	    color: #b21413;
+	    font-size: 15px;
+	    text-transform: uppercase;
+	    font-family: "MyriadPro-Bold";
+	    line-height: 25px;
+	    padding: 5px 0px;
+	    border-bottom: 1px solid #e1e1e1;
+	    span {
+		    padding-right: 18px;
+		    background: url("../images/icon-title.png") no-repeat right center;
+		}
+	}
+	.item-view {
+	    width: 100%;
+	    border-bottom: 1px dashed #e1e1e1;
+	    position: relative;
+	    color: #333333;
+	    font-size: 14px;
+	    line-height: 20px;
+	    &:before {
+		    position: absolute;
+		    content: '';
+		    border: 2px solid #b91517;
+		    top: 17px;
+		    left: 0px;
+		}
+	}
+	.item-last{
+	    border-bottom: none !important;
+	}
+
+}
+// END.grid
+
+.productslist-home{
+	margin-bottom: 16px;
+	.product-list-home{
+		@media (max-width: 768px) {
+	    	margin: 5px 0px;
+	    }
+		.product-item{
+			width: 100%;
+			text-align:center;
+			img{
+
+			}
+		}
+		.product-time{
+		    line-height: 15px;
+		    color: #999999;
+		    font-size: 12px;
+		}
+		.product-title{
+		    font-size: 15px;
+		    font-weight: normal;
+		    line-height: 20px;
+		    height: 40px;
+		    display: block;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    white-space: normal;
+		    a{
+		    	color: #3333333;
+		    }
+		}
+		.product-summary {
+		    line-height: 16px;
+		    
+		    @media (min-width: 992px) {
+		    	height: 70px;
+		    	padding: 8px 0px;
+		    }
+		    @media (max-width: 991px) {
+		    	height: 64px;
+		    	margin: 8px 0px;
+		    }
+		    overflow: hidden;
+		    color: #555555;
+		}
+	}
+
+}

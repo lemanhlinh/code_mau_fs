@@ -1,0 +1,137 @@
+.box_message {
+  font-size: 16px;
+  line-height: 24px;
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+}
+
+.banner_ct {
+  margin-bottom: 40px;
+  position: relative;
+  .ct_bot {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    .box_text {
+      display: flex;
+      align-items: center;
+      h1 {
+        margin: 0;
+        display: inline-block;
+        color: #fff;
+        font-size: 24px;
+        padding-left: 25px;
+        @media(max-width: 767px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.box_contentchild {
+  .item_content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .content_it {
+      h2 {
+        margin: 0;
+        font-size: 30px;
+        font-family: 'segoeuibold';
+        padding-bottom: 10px;
+        line-height: 40px;
+      }
+      .border_bot {
+        display: block;
+        background-color: #333;
+        width: 60px;
+        height: 2px;
+      }
+      .smr_item {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 40px 0;
+      }
+      a {
+        display: inline-block;
+        padding-right: 30px;
+        font-size: 15px;
+        line-height: 20px;
+        color: #2685CA;
+        margin-top: 30px;
+        background: url('../../../home/assets/images/Group 638.svg') top 0 right 0 no-repeat;
+      }
+    }
+  }
+  .row_item {
+    margin-right: 0;
+    margin-left: 0;
+    .col_item {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .even {
+    background-color: #F4F9FC;
+    position: relative;
+    .bg_left {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .bg_right {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    .content_it {
+      padding-left: 40px;
+      .border_bot {
+        float: right;
+      }
+    }
+  }
+  .old {
+    .content_it {
+      padding-right: 40px;
+      .border_bot {
+        float: left;
+      }
+    }
+  }
+  @media(max-width: 767px) {
+    .item_content {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      .content_it {
+        h2{
+          font-size: 20px;
+          line-height: 24px;
+          margin-top: 20px;
+        }
+        .smr_item {
+          margin: 20px 0;
+          text-align: justify;
+        }
+      }
+    }
+    .even {
+      .content_it {
+        padding-left: 0;
+      }
+    }
+    .old {
+      .row_item {
+        display: flex;
+        flex-direction: column-reverse;
+        .content_it {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

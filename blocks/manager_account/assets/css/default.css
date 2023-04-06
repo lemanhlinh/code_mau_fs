@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 11, 2017, 5:55:13 PM
+    Author     : NgoQuang
+*/
+.users_tabs {
+  margin-bottom: 20px; }
+  .users_tabs .title_menu_info {
+    color: #fff;
+    padding: 10px 0 10px 15px;
+    background: #cc0000;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0; }
+  .users_tabs ul li {
+    padding: 10px;
+    border-bottom: 1px solid #2c3e50;
+    background: #34495e; }
+    .users_tabs ul li:hover {
+      background: #2c3e50; }
+    .users_tabs ul li a {
+      color: #fff;
+      font-size: 14px;
+      padding-left: 10px; }
+      .users_tabs ul li a i {
+        padding-right: 10px; }
+  .users_tabs ul .acti {
+    background: #2c3e50 url("../images/task_acti.png") no-repeat 90%; }
+    .users_tabs ul .acti:hover {
+      background: #2c3e50 url("../images/task_acti.png") no-repeat 90%; }
+
+.affix {
+  top: 100px;
+  width: 220px;
+  z-index: 9; }
+
+/*# sourceMappingURL=default.css.map */

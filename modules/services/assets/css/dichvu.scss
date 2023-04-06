@@ -1,0 +1,137 @@
+header{
+	.manu{
+		.menucap2{
+			position: absolute;
+			top: 60px;
+			left: 532px;
+			display: none;
+			background-color: #ffffff;
+			border: #eeeeee solid 1px;
+			padding: 0;
+			li{
+				border-bottom: #eeeeee solid 1px;
+				list-style: none;
+				margin: 0px;
+				padding: 5px;
+				a{
+					text-decoration: none;
+					text-transform: capitalize;
+					margin: 0;
+					font-size: 14px;
+					font-family: rotobo;
+					padding: 15px;
+					color: #333333;
+					background: url('../img/logos/a21.png') left 4px top 18px no-repeat;
+				&:hover{
+					color: #40b5e6;
+					background: url('../img/logos/a5.png') left 4px top 18px no-repeat;
+					}
+				}
+			}
+		}
+	}
+	// .manu > ul > .c2{
+	// 	position: relative;
+	// }
+	.manu > ul > .c2:hover .menucap2{
+	display: block;
+	}
+}
+section{
+	.body{
+		.bbb{
+			a{
+				color: #777777;
+				font-size: 14px;
+				text-decoration: none;
+				&:hover{
+					color: #777777;
+				}
+			}
+
+		}
+		.cot{
+			@media all and (max-width: 768px) {
+				margin-top: 0px;
+			}
+			margin-top: 20px;
+			.rightbody{
+				.menubody{
+					padding-left: 0;
+					@media all and (max-width: 768px) {
+						display: none;
+					}
+					.tuvan{
+						padding: 10px 20px;
+						background-color: #eeeeee;
+						border: #ffffff solid 1px;
+
+						a{
+							text-decoration: none;
+							font-size: 16px;
+							color: #333333;
+							display: block;
+						}
+						&:hover, &.active{
+							background-color: #2aaee4;
+							background: #2aaee4 url('/images/logos/a20.png') left 250px  top 12px no-repeat;
+							a{
+								color: #ffffff;
+							}
+						}
+					}
+				}
+			.baiviet{
+				border-left: #2aaee4 solid 2px;
+				background-color: #f8f8f8;
+			    margin-top: 15px;
+				p{
+					font-size: 18px;
+					color: #333333;
+					font-weight: bold;
+					padding: 10px 20px;
+				}
+			}
+			.baivietnoibat{
+				display: flex;
+				text-decoration: none;
+				color: #333333;
+				    padding: 15px 0;
+					border-bottom: #eeeeee solid 1px;
+				.luong{
+				    padding: 0px 10px 10px 15px;
+				    margin: 0;
+				}
+			}
+		}
+			.leftbody{
+			    padding-top: 2px;
+				img{
+					@media all and (max-width: 768px) {
+						width: 100%;
+					}
+					@media all and (max-width: 1024px) {
+						width: 100%;
+					}
+				}
+				p{
+					//margin-top: 10px;
+					font-size: 14px;
+					color: #333333;
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 768px) {
+	.leftbody {
+		img {
+			max-width: 100% !important;
+			height: auto !important;
+		}
+		table{
+			display: block!important;
+			overflow: auto!important;
+		}
+	}
+}

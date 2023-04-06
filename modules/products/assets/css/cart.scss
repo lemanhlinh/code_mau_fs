@@ -1,0 +1,213 @@
+.eshopcart {
+	margin-bottom: 30px;
+	.item-img{
+		margin-right: 20px;
+		img{
+			max-width: 90px;
+		}
+	}
+	.df {
+	    font-size: 18px;
+	    margin-bottom: 10px;
+	    font-weight: normal;
+	    a{
+	    	color: #7a461d;
+	    }
+	}
+	.tr-pro{
+		font-size: 16px;
+		position: relative;
+		span{
+			margin-left: 20px;
+		}
+		&:after{
+			content: '';
+			border-bottom: 1px solid #dddddd;
+			position: relative;
+			width: 100%;
+		}
+	}
+	.col-xs-12{
+		@media (max-width: 767px){
+			margin-bottom: 10px;
+		}
+	}
+	.status {
+	    color: #333333;
+	    font-size: 16px;
+	    display: inline-block;
+	    background: url(../images/status.jpg) left center no-repeat;
+	    padding-left: 21px;
+	    margin-right: 20px;
+	}
+	.table {
+		margin-bottom: 40px;
+	}
+	.fun-order{
+		text-align: center;
+	}
+	.name-product{
+		h2{
+			color: #333333;
+			font-size: 16px;
+			text-align: left;
+			font-weight: normal;
+		}
+	}
+	.price-product{
+
+	}
+	.numbers-pro{
+	    border: 1px solid #dddddd;
+	    text-align: center;
+	    font-size: 16px;
+	    height: 30px;
+	    @media (min-width: 768px){
+			width: 90px;
+		}
+	    @media (max-width: 767px){
+			width: 100%;
+		}
+	}
+	.col-delete-cart {
+	    color: #333333;
+	    font-size: 16px;
+	    display: inline-block;
+	    background: url('../images/delete-icon.png') no-repeat left center; 
+	    padding-left: 21px;
+	}
+	.price-product,.total-price, .text-left{
+		font-size: 18px;
+		color: #580f12;
+		line-height: 20px;
+
+	}
+	.total-order{
+		text-align: center;
+		font-size: 16px;
+	}
+	.tr-pro{
+	    padding: 10px 15px;
+	    text-align: center;
+	}
+	.title-order {
+	    font-size: 18px;
+	    font-weight: normal;
+	    margin-bottom: 18px;
+	    text-align: center;
+	    @media (max-width: 767px){
+			display: none;
+		}
+	    h4{
+	    	font-weight: normal;
+	    	font-size: 18px;
+	    	text-align: left;
+	    }
+	}
+	.count-order{
+		@media (max-width: 767px){
+			display: block;
+		}
+	}
+	.button-cart {
+	    font-size: 16px;
+	    text-transform: uppercase;
+	    position: relative;
+	    @media (min-width: 768px){
+	    	padding-left: 18px;
+	    	margin-left: 10px;
+			&:before{
+		        content: '';
+			    top: 6px;
+			    position: absolute;
+			    left: 0px;
+			    border-top: 5px solid #ffffff;
+			    border-bottom: 5px solid #ffffff;
+			    border-left: 5px dashed #580f12;
+		    }
+		}
+	    @media (max-width: 767px){
+    	    background-color: #7a461d;
+			width: 100%;
+			color: #ffffff;
+			margin-bottom: 10px;
+			line-height: 30px;
+		    border-radius: 3px;
+		    -moz-border-radius: 3px;
+		    -webkit-border-radius: 3px;
+		}
+	    
+	}
+	.regular{
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 22px;
+		border-bottom: double #cecece;
+		padding-bottom: 8px;
+		margin-bottom: 20px;
+	}
+	.form_control {
+	    width: 100%;
+	    border: 1px solid #d3d3d3;
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    border-radius: 3px;
+	    height: 32px;
+	    margin-bottom: 12px;
+	    padding: 0px 14px;
+	    color: #555555;
+	}
+	.sender_comments {
+	    width: 100%;
+	    min-height: 92px;
+	    border: 1px solid #d3d3d3;
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    border-radius: 3px;
+	    padding: 14px;
+	    color: #555555;
+	    margin-bottom: 10px;
+	}
+	.eshopcart_info{
+		margin-bottom: 20px;
+		.radio{
+			margin-bottom: 15px;
+		}
+		.submitbt {
+		    padding: 0px 14px;
+		    height: 34px;
+		    color: #ffffff;
+		    border-radius: 3px;
+		    -moz-border-radius: 3px;
+		    -webkit-border-radius: 3px;
+		    line-height: 32px;
+		    font-size: 16px;
+		    float: left;
+		    font-weight: normal;
+		    background-color: #7a461d;
+		    @media (max-width: 991px){
+		    	width: 100%;
+		    }
+		}
+		.ord_payment_type3{
+			padding-top: 10px;
+		}
+	}
+}
+.button-step {
+    padding: 10px 14px;
+    background-color: #fa6f3d;
+    font-size: 16px;
+    color: #ffffff;
+    margin-left: 10px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: none;
+    font-size: 16px;
+    float: right;
+    text-transform: uppercase;
+    &:hover{
+    	color: #ffffff;
+    }
+}

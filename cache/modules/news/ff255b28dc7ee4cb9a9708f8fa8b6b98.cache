@@ -1,0 +1,5 @@
+
+ UPDATE fs_news_en
+						SET hits = hits + 1
+						WHERE  id = '9'
+					 

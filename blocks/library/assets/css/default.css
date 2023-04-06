@@ -1,0 +1,139 @@
+
+.library-default .block-library{
+    position: relative;
+}
+
+.libraries-carousel ul{
+    top: 0px !important;
+    margin: 30px 0 0 47% !important;
+}
+
+.libraries-carousel ul li{
+    position: relative;
+}
+.libraries-carousel ul li span{
+    color: #ffffff;
+    /*position: absolute;*/
+    bottom: 0px;
+    /*background: black;*/
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 40px;
+    /*opacity: 0.7;*/
+    width: 100%;
+    font-weight: bold;
+
+}
+.glyphicon-chevron-right:before{
+    content: '' !important;
+}
+.glyphicon-chevron-left:before{
+    content: '' !important;
+}
+
+@media only screen and (min-width: 375px)and (max-width : 424px) {
+
+.block-library .libraries-tabs{
+    display: none;
+}
+    .block-library .tab-libraries{
+        display: none;
+    }
+.library-default{
+    background: url(../images/banner.png) no-repeat scroll center top;
+    padding: 42px 0 40px;
+    margin-bottom: 40px;
+    height: 500px;
+}
+
+}
+@media only screen and (min-width: 425px)and (max-width : 767px) {
+
+    .block-library .libraries-tabs{
+        display: none;
+    }
+
+    .block-library .tab-libraries{
+        display: none;
+    }
+
+
+}
+.carousel-control.left{
+    background-image: unset;
+}
+.carousel-control.right{
+    background-image: unset;
+}
+.left .prev1 {
+    /*background: url(../images/prev.png) no-repeat top 5px left 5px !important;*/
+    width: 35px;
+    height: 50px;
+    position: absolute;
+    left: 10%;
+    top: 43%;
+}
+@media all and (max-width: 767px) {
+    .prev1 {
+        top: 35%!important;
+    }
+}
+.width1{
+    width: 120%;
+}
+@media all and (max-width: 767px) {
+    .width1{
+        width: 80%!important;
+    }
+}
+.right .next1 {
+    /*background: url(../images/next.png) no-repeat top 5px left 5px !important;*/
+    width: 35px;
+    height: 50px;
+    position: absolute;
+    right: 15%;
+    top: 43%;
+}
+@media all and (max-width: 767px) {
+    .next1 {
+        top: 35%!important;
+    }
+}
+@media only screen and (min-width: 768px)and (max-width : 1023px) {
+
+    .block-library .libraries-tabs{
+        display: none;
+    }
+    .library-default .tab-libraries-mobile .tab-pane  .carousel-inner{
+        height: 374px;
+    }
+
+
+    .block-library .tab-libraries{
+        display: none;
+    }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .block-library .libraries-tabs-mobile{
+        display: none;
+    }
+
+    .block-library .tab-libraries-mobile{
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+

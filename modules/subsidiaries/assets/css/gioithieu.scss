@@ -1,0 +1,105 @@
+
+section {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  font-family: "segoeui" !important;
+  overflow: hidden;
+  .body_lv {
+    position: relative;
+    margin-bottom: 40px;
+    padding-top: 60px;
+    .icon_r {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 15%;
+    }
+    .left_bd {
+      img{
+        float: left;
+        margin-right: 30px;
+
+      }
+      .infor{
+        display: table-cell;
+        vertical-align: top;
+        h1{
+          font-size: 18px;
+          font-family: 'segoeuibold';
+          margin-top: 0;
+          margin-bottom: 10px;
+          line-height: 24px;
+        }
+        span{
+          display: block;
+          padding-left: 25px;
+          background: url("../images/Path 1703.png") top 5px left 3px no-repeat;
+          margin-bottom: 10px;
+        }
+        a{
+          display: block;
+          padding-left: 25px;
+          background: url("../images/global.png") bottom 5px left 0 no-repeat;
+          color: #2685CA;
+        }
+      }
+      .ct_l{
+        text-align: justify;
+        margin-top: 15px;
+      }
+      @media(max-width: 768px){
+        margin-bottom: 30px;
+      }
+    }
+    .right_bd{
+      .list_image{
+        position: relative;
+        .owl-prev{
+          width: 40px;
+          height: 40px;
+          background: url("../images/Group 776.png") top 0 left 0 no-repeat;
+          position: absolute;
+          top: 43%;
+          left: 20px;
+          span{
+            display: none;
+          }
+        }
+        .owl-next{
+          width: 40px;
+          height: 40px;
+          background: url("../images/Group 777.png") top 0 left 0 no-repeat;
+          position: absolute;
+          top: 43%;
+          right: 20px;
+          span{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+.box_ctt {
+  position: relative;
+  margin-top: 50px;
+  .img_mem {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 70px 0;
+    img{
+      margin: auto;
+      width: 65%;
+    }
+    @media(max-width: 991px){
+      padding: 20px 0;
+    }
+  }
+}
+
+

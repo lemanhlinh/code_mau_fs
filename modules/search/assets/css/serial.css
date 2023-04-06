@@ -1,0 +1,51 @@
+.serial h1 {
+    border-bottom: 1px solid #bcbec0;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+}
+.serial label {
+    background: none repeat scroll 0 0 #f37216;
+    color: #fff;
+    display: block;
+    font-weight: normal;
+    margin: 16px 0 18px;
+    padding: 4px 16px;
+}
+.serial #serial_number {
+    border: 1px solid #bcbec0;
+    border-radius: 2px;
+    box-shadow: 0 0 6px 0 #d4d6d8 inset;
+    color: #58595b;
+    font-size: 11px;
+    font-style: italic;
+    padding: 5px 10px;
+    width: 268px;
+}
+.serial #submitbt_serial {
+    background: none repeat scroll 0 0 #f47922;
+    border-radius: 2px;
+    box-shadow: 1px 2px 1px 0 #c3611b;
+    color: #fff;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-transform: uppercase;
+}
+.serial table.adminlist {
+    background: none;
+    border-collapse: collapse;
+    border-color: #cccccc;
+    width: 100%;
+}
+.serial table.adminlist th {
+    background-color: #e2e2e2;
+    color: #000000;
+    font-family: verdana;
+    font-weight: bold;
+    height: 25px;
+    text-align: center;
+}

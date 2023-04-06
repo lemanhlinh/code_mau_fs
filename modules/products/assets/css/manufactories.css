@@ -1,0 +1,46 @@
+.frame_letter {
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 2px;
+    border: #E5E5E5 solid 1px;
+    margin-bottom: 20px;
+}
+.letterheader{
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 10px;
+    padding-bottom: 2px;
+ 	font-size: 16px;
+    font-weight: bold;
+   
+}
+.title_members {
+   float: left;
+  margin-bottom: 30px;
+  width: 25%;
+}
+.title_members_inner {
+}
+.title_members_inner .img_link{
+	  float: left;
+  margin-right: 11px;
+}
+.title_members .img_link img {
+	border-radius: 27px;
+}
+.title_name {
+  color: #777777;
+  display: block;
+  font-size: 13px;
+}
+.title_name span {
+	font-weight: bold;
+}
+.rate{
+	  margin-top: 5px;
+}
+.follow{
+	color: #5DB8C9;
+}
+.unfollow{
+	color: #F76161;
+}

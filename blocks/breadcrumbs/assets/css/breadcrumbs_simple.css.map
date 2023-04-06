@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,iBAAkB,CACjB,gBAAgB,CAAE,OAAO,CACzB,OAAO,CAAE,MAAM,CAEf,6BAAY,CACX,KAAK,CAAE,OAAO,CACd,SAAS,CAAE,IAAI,CACf,KAAK,CAAE,IAAI,CACX,YAAY,CAAE,IAAI,CAClB,QAAQ,CAAE,QAAQ,CAClB,UAAU,CAAE,IAAI,CAIhB,uBAAG,CACF,KAAK,CAAE,IAAI,CAEX,yBAAE,CACD,MAAM,CAAE,YAAY",
+"sources": ["breadcrumbs_simple.scss"],
+"names": [],
+"file": "breadcrumbs_simple.css"
+}

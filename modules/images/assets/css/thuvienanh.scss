@@ -1,0 +1,269 @@
+header {
+  .manu {
+    .menucap2 {
+      position: absolute;
+      top: 60px;
+      left: 292px;
+      display: none;
+      background-color: #ffffff;
+      border: #eeeeee solid 1px;
+      padding: 0;
+      li {
+        border-bottom: #eeeeee solid 1px;
+        list-style: none;
+        margin: 0px;
+        padding: 5px;
+        a {
+          text-decoration: none;
+          text-transform: capitalize;
+          margin: 0;
+          font-size: 14px;
+          font-family: rotobo;
+          padding: 15px;
+          color: #333333;
+          background: url('../img/logos/a21.png') left 4px top 18px no-repeat;
+          &:hover {
+            color: #40b5e6;
+            background: url('../img/logos/a5.png') left 4px top 18px no-repeat;
+          }
+        }
+      }
+    }
+  }
+  // .manu > ul > .c2{
+  // 	position: relative;
+  // }
+  .manu > ul > .c2:hover .menucap2 {
+    display: block;
+  }
+}
+
+section {
+  margin-bottom: 30px;
+  .body {
+    .bbb {
+      a {
+        color: #777777;
+        font-size: 14px;
+        text-decoration: none;
+        &:hover {
+          color: #777777;
+        }
+      }
+
+    }
+    .cot {
+      margin-top: 20px;
+      .rightbody {
+        @media (min-width: 768px) and (max-width: 769px) {
+          display: none;
+        }
+        .tuvan {
+          padding: 10px 20px;
+          background-color: #eeeeee;
+          border: #ffffff solid 1px;
+
+          a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #333333;
+          }
+          &:hover, &.active {
+            background-color: #2aaee4;
+            background: #2aaee4 url('/images/logos/a20.png') left 250px top 12px no-repeat;
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+        .baiviet {
+          border-left: #2aaee4 solid 2px;
+          background-color: #f8f8f8;
+          margin-top: 15px;
+          p {
+            font-size: 18px;
+            color: #333333;
+            font-weight: bold;
+            padding: 10px 20px;
+          }
+        }
+        .baivietnoibat {
+          display: flex;
+          text-decoration: none;
+          color: #333333;
+          padding: 15px 0;
+          border-bottom: #eeeeee solid 1px;
+          .luong {
+            padding: 0px 10px 10px 15px;
+            margin: 0;
+          }
+        }
+      }
+      .leftbody {
+        .leftbody1 {
+          .thuvienanh {
+            text-decoration: none;
+            color: #333333;
+            font-size: 16px;
+            font-weight: bold;
+            display: block;
+            p {
+              margin-top: 15px;
+              margin-bottom: 25px;
+            }
+          }
+        }
+        .taithem1 {
+          text-align: center;
+          margin-top: 10px;
+          a {
+            background: #40b5e6 url(/images/logos/thuvienanh10.png) left 82px top 6px no-repeat;
+            padding-right: 35px;
+            padding-left: 20px;
+            color: #ffffff;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    @media all and (max-width: 1024px) {
+      .cot {
+        .leftbody {
+          .leftbody1 {
+            margin-top: -10px;
+            margin-left: -10px;
+            .thuvienanh {
+              padding-left: 10px;
+              padding-right: 10px;
+              // text-align: center;
+              img {
+                width: 100%;
+              }
+            }
+          }
+          .taithem1 {
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    @media all and (max-width: 767px) {
+      .cot {
+        .leftbody {
+          .leftbody1 {
+            margin: 0 -5px;
+            .thuvienanh {
+              // text-align: center;
+              padding: 0 5px;
+              img {
+                width: 100%;
+              }
+              p {
+                margin-top: 5px;
+                margin-bottom: 10px;
+                font-size: 14px !important;
+              }
+            }
+          }
+        }
+        .rightbody {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.modal.in .modal-dialog {
+  z-index: 99999;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.carousel-control.left {
+  background: none;
+  left: -59px;
+  top: -41px;
+
+  @media(max-width: 425px) {
+    left: -25px;
+    top: -33px;
+  }
+  span {
+    background: url(/images/logos/thuvienanh_chitiet.png) no-repeat top 1px left 16px;
+    width: 53px;
+    height: 63px;
+    text-shadow: none;
+    border: none;
+    font-size: 0;
+    @media(max-width: 768px) {
+      background: url(/images/logos/thuvienanh_chitiet.png) no-repeat top 1px left 7px;
+    }
+  }
+}
+
+.carousel-control.right {
+  background: none;
+  right: -62px;
+  top: -50px;
+  @media(max-width: 425px) {
+    right: -25px;
+    top: -48px;
+  }
+
+  span {
+    background: url(/images/logos/thuvienanh_chitietr.png) no-repeat top 0 right 19px;
+    width: 53px;
+    height: 69px;
+    text-shadow: none;
+    border: none;
+    font-size: 0;
+    @media(max-width: 768px) {
+      background: url(/images/logos/thuvienanh_chitietr.png) no-repeat top 0 right 9px;
+
+    }
+  }
+}
+
+.size1 {
+  padding: 10px 10px 0 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 730px;
+  position: absolute;
+  left: -90px;
+  @media(max-width: 425px) {
+    width: 90%;
+    position: unset;
+    margin: 25% auto;
+  }
+  @media all and(max-width: 767px) and(min-width: 426px) {
+    width: 65%;
+    position: unset;
+    margin: 7% auto;
+
+  }
+}
+
+section .body .cot .leftbody .leftbody1 .thuvienanh .img_title {
+  font-size: 16px;
+  color: #333333;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  //@media all and(max-width: 767px){
+  //	font-size: 14px;
+  //}
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  margin: 0 auto;
+}
+
+.modal-header .close {
+  font-size: 30px !important;;
+}

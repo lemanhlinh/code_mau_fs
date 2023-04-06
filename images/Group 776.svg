@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="42" viewBox="0 0 36 42">
+  <g id="Group_776" data-name="Group 776" transform="translate(-1564 -29)">
+    <path id="Polygon_2" data-name="Polygon 2" d="M31.5,0,42,18,31.5,36h-21L0,18,10.5,0Z" transform="translate(1600 29) rotate(90)" fill="#2685ca"/>
+    <g id="loupe" transform="translate(1573 40.997)">
+      <g id="Group_1" data-name="Group 1" transform="translate(0 0.003)">
+        <path id="Path_3" data-name="Path 3" d="M17.775,16.717,12.657,11.6a7.136,7.136,0,1,0-1.06,1.06l5.117,5.117a.75.75,0,1,0,1.06-1.06ZM7.123,12.749a5.623,5.623,0,1,1,5.623-5.623A5.629,5.629,0,0,1,7.123,12.749Z" transform="translate(0 -0.003)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

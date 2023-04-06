@@ -1,0 +1,196 @@
+RewriteEngine On
+
+#RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)
+RewriteRule (.*) http://%1/$1 [R=301,L]
+
+AddType text/x-component .htc
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+#RewriteCond %{REQUEST_URI} !^/index.php
+#RewriteCond %{REQUEST_URI} (/|\.php|\.html|\.htm|\.feed|\.pdf|\.raw|/[^.]*)$  [NC]
+#RewriteRule (.*) index.php
+
+RewriteRule ^(index.php|index.html)$ index.php?module=home&view=home&Itemid=1lang=vi[L]
+RewriteRule ^&tmpl=1$ index.php?module=home&view=home&Itemid=1&lang=vi[L]
+RewriteRule ^$ index.php?module=home&view=home&Itemid=1&lang=vi [L]
+
+RewriteRule ^$ index.php?&lang=vi [L]
+RewriteRule ^en$ index.php?module=home&view=home&Itemid=1&lang=en [L]
+
+#--------------------------------new---------------------------------------------------------------------------------------
+RewriteRule ^([^/]*)-cn([0-9]*)(-page([0-9]*)).html$ index.php?module=news&view=cat&ccode=$1&id=$2&Itemid=3&page=$4&lang=vi&%{QUERY_STRING} [L]
+RewriteRule ^([^/]*)-cn([0-9]*).html$ index.php?module=news&view=cat&ccode=$1&id=$2&Itemid=3&lang=vi&%{QUERY_STRING} [L]
+
+RewriteRule ^([^/]*)-n([0-9]*).html$ index.php?module=news&view=news&code=$1&id=$2&Itemid=4&lang=vi [L]
+
+RewriteRule ^amp/([^/]*)-n([0-9]*).html$ index.php?module=news&view=amp_news&code=$1&id=$2&Itemid=50&lang=vi [L]
+
+RewriteRule ^tin-tuc(-page([0-9]*)).html$ index.php?module=news&view=home&ccode=$1&Itemid=2&page=$2&lang=vi [L]
+RewriteRule ^tin-tuc.html(.*)$ index.php?module=news&view=home&Itemid=2&lang=vi&$1 [L]
+
+#english
+RewriteRule ^([^/]*)-cne([0-9]*)(-page([0-9]*)).html$ index.php?module=news&view=cat&ccode=$1&id=$2&Itemid=3&page=$4&lang=en&%{QUERY_STRING} [L]
+RewriteRule ^([^/]*)-cne([0-9]*).html$ index.php?module=news&view=cat&ccode=$1&id=$2&Itemid=3&lang=en&%{QUERY_STRING} [L]
+
+RewriteRule ^([^/]*)-ne([0-9]*).html$ index.php?module=news&view=news&code=$1&id=$2&Itemid=4&lang=en [L]
+
+RewriteRule ^amp/([^/]*)-ne([0-9]*).html$ index.php?module=news&view=amp_news&code=$1&id=$2&Itemid=50&lang=en [L]
+
+RewriteRule ^news(-page([0-9]*)).html$ index.php?module=news&view=home&ccode=$1&Itemid=2&page=$2&lang=en [L]
+RewriteRule ^news.html(.*)$ index.php?module=news&view=home&Itemid=2&lang=en&$1 [L]
+
+##-------------------------------------------services-------------------------------------------------------------------------------------------
+#
+#RewriteRule ^([^/]*)-s([0-9]*).html$ index.php?module=services&view=service&code=$1&id=$2&Itemid=40&lang=vi [L]
+##english
+#RewriteRule ^([^/]*)-se([0-9]*).html$ index.php?module=services&view=service&code=$1&id=$2&Itemid=40&lang=en [L]
+
+
+#-------------------------------------------images-------------------------------------------------------------------------------------------
+
+RewriteRule ^thu-vien-anh.html$ index.php?module=images&view=img&Itemid=50&lang=vi [L]
+RewriteRule ^photo-library.html$ index.php?module=images&view=img&Itemid=50&lang=en [L]
+
+#-------------------------------------------products-------------------------------------------------------------------------------------------
+RewriteRule ^([^/]*)-cp([0-9]*)(-page([0-9]*)).html(.*) index.php?module=products&view=cat&ccode=$1&cid=$2&Itemid=9&page=$4&$5&lang=vi&%{QUERY_STRING}  [L]
+RewriteRule ^([^/]*)-cp([0-9]*).html(.*) index.php?module=products&view=cat&ccode=$1&cid=$2&Itemid=9&$3&lang=vi&%{QUERY_STRING}  [L]
+
+RewriteRule ^san-pham/([^/]*)-p([0-9]*).html$ index.php?module=products&view=product&code=$1&id=$2&Itemid=10&lang=vi [L]
+
+RewriteRule ^amp/([^/]*)-p([0-9]*).html$ index.php?module=products&view=amp_product&code=$1&id=$2&Itemid=50&lang=vi [L]
+
+RewriteRule ^san-pham(-page([0-9]*))?.html(.*) index.php?module=products&view=home&page=$2&Itemid=11&lang=vi&$3&%{QUERY_STRING}  [L]
+
+#english
+RewriteRule ^([^/]*)-cpe([0-9]*)(-page([0-9]*)).html(.*) index.php?module=products&view=cat&ccode=$1&cid=$2&Itemid=9&page=$4&$5&lang=en&%{QUERY_STRING}  [L]
+RewriteRule ^([^/]*)-cpe([0-9]*).html(.*) index.php?module=products&view=cat&ccode=$1&cid=$2&Itemid=9&$3&lang=en&%{QUERY_STRING}  [L]
+
+RewriteRule ^products/([^/]*)-pe([0-9]*).html$ index.php?module=products&view=product&code=$1&id=$2&Itemid=10&lang=en [L]
+
+RewriteRule ^amp/([^/]*)-pe([0-9]*).html$ index.php?module=products&view=amp_product&code=$1&id=$2&Itemid=50&lang=en [L]
+
+RewriteRule ^products(-page([0-9]*))?.html(.*) index.php?module=products&view=home&page=$2&Itemid=11&lang=en&$3&%{QUERY_STRING}  [L]
+#-----------------------------------contents--------------------------------------------------------------------
+RewriteRule ^([^/]*)-cc([0-9]*)(-page([0-9]*)).html$ index.php?module=contents&view=cat&ccode=$1&id=$2&page=$4&Itemid=7 [L]
+RewriteRule ^([^/]*)-cc([0-9]*).html$ index.php?module=contents&view=cat&ccode=$1&id=$2&Itemid=7 [L]
+RewriteRule ^([^/]*)-c([0-9]*).html$ index.php?module=contents&view=content&code=$1&id=$2&Itemid=8&lang=vi  [L]
+RewriteRule ^([^/]*)-ce([0-9]*).html$ index.php?module=contents&view=content&code=$1&id=$2&Itemid=8&lang=en  [L]
+RewriteRule ^gioi-thieu.html$ index.php?module=contents&view=home&Itemid=7&lang=vi [L]
+RewriteRule ^about.html$ index.php?module=contents&view=home&Itemid=7&lang=en [L]
+
+#-----------------------------------field--------------------------------------------------------------------
+RewriteRule ^([^/]*)-f([0-9]*).html$ index.php?module=field&view=field&code=$1&id=$2&Itemid=87&lang=vi  [L]
+RewriteRule ^([^/]*)-fe([0-9]*).html$ index.php?module=field&view=field&code=$1&id=$2&Itemid=87&lang=en  [L]
+RewriteRule ^linh-vuc-hoat-dong.html$ index.php?module=field&view=home&Itemid=78&lang=vi [L]
+RewriteRule ^field-of-activity.html$ index.php?module=field&view=home&Itemid=78&lang=en [L]
+
+
+#-----------------------------------Subsidiaries--------------------------------------------------------------------
+RewriteRule ^([^/]*)-s([0-9]*).html$ index.php?module=subsidiaries&view=subsidiaries&code=$1&id=$2&Itemid=88&lang=vi  [L]
+RewriteRule ^([^/]*)-se([0-9]*).html$ index.php?module=subsidiaries&view=subsidiaries&code=$1&id=$2&Itemid=88&lang=en  [L]
+RewriteRule ^cong-ty-thanh-vien.html$ index.php?module=subsidiaries&view=home&Itemid=79&lang=vi [L]
+RewriteRule ^subsidiaries.html$ index.php?module=subsidiaries&view=home&Itemid=79&lang=en [L]
+
+#-----------------------------------achievements--------------------------------------------------------------------
+RewriteRule ^thanh-tich.html$ index.php?module=achievements&view=home&Itemid=77&lang=vi [L]
+RewriteRule ^achievements.html$ index.php?module=achievements&view=home&Itemid=77&lang=en [L]
+
+#--------------------------------------search--------------------------------------------------------
+RewriteRule ^tim-kiem/([^/]*)(-page([0-9]*)).html(.*) index.php?module=search&view=search&keyword=$1&Itemid=20&page=$3&lang=vi [L]
+RewriteRule ^tim-kiem/([^/]*).html(.*) index.php?module=search&view=search&keyword=$1&Itemid=20&lang=vi [L]
+
+RewriteRule ^search/([^/]*)(-page([0-9]*)).html(.*) index.php?module=search&view=search&keyword=$1&Itemid=20&page=$3&lang=en [L]
+RewriteRule ^search/([^/]*).html(.*) index.php?module=search&view=search&keyword=$1&Itemid=20&lang=en [L]
+
+#--------------------contact --------------------------------------------------------------------------------------
+RewriteRule ^lien-he.html$ index.php?module=contact&Itemid=14&lang=vi [L]
+RewriteRule ^contact.html$ index.php?module=contact&Itemid=14&lang=en [L]
+
+#----------------auto delete cache ---------------------------------------------------------------------------------------------
+RewriteRule ^delete-cache.html index.php?module=cache&Itemid=22 [L]
+
+#------------------notfound ----------------------------------------------------------------------------------------------------
+ErrorDocument 404 /404-page.html
+RewriteRule ^404-page.html index.php?module=notfound&view=notfound&Itemid=1000 [L]
+
+#----------------sitemap--------------------------------------------------------------------------------------------------------
+RewriteRule ^site-map.html(.*) index.php?module=sitemap&view=sitemap&Itemid=16 [L]
+RewriteRule ^sitemap.xml$ sitemap.php [L]
+
+#-------------------rss---------------------------------------------------------------------------------------------------------
+RewriteRule ^rss.xml$ rss.php [L]
+RewriteRule ^feeds$ rss.php [L]
+
+#-----------------genarate sitemap----------------------------------------------------------------------------------------------
+RewriteRule ^genarate_sitemap.html index.php?module=sitemap_auto&view=sitemap_auto&raw=1 [L]
+
+#sitemap
+RewriteRule ^site-map.html(.*) index.php?module=sitemap&view=sitemap&Itemid=16 [L]
+RewriteRule ^sitemap.xml$ sitemap.php [L]
+
+#rss
+RewriteRule ^rss.xml$ rss.php [L]
+RewriteRule ^feeds$ rss.php [L]
+
+#genarate sitemap
+RewriteRule ^genarate_sitemap.html index.php?module=sitemap_auto&view=sitemap_auto&raw=1 [L]
+
+#notfound
+ErrorDocument 404 /404-page.html
+RewriteRule ^404-page.html index.php?module=notfound&view=notfound&Itemid=1000 [L]
+
+#----------------Configures the caching expiry date for browser caching of static files.
+#----------------Configures the caching expiry date for browser caching of static files.
+<ifModule mod_gzip.c>
+	mod_gzip_on Yes
+	mod_gzip_dechunk Yes
+	mod_gzip_item_include file .(html?|txt|css|js|php|pl)$
+	mod_gzip_item_include handler ^cgi-script$
+	mod_gzip_item_include mime ^text/.*
+	mod_gzip_item_include mime ^application/x-javascript.*
+	mod_gzip_item_exclude mime ^image/.*
+	mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</ifModule>
+
+<IfModule mod_setenvif.c>
+	<IfModule mod_headers.c>
+		SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)s*,?s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+		RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+	</IfModule>
+</IfModule>
+
+<IfModule mod_expires.c>
+    <FilesMatch ".(jpg|jpeg|gif|png|mp3|flv|mov|avi|3pg|html|htm|swf|pdf|js|css|ico|mp4)$">
+        ExpiresActive on
+        ExpiresDefault "access plus 1 year"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+<FilesMatch ".(js|css|html|htm|php|xml)$">
+    SetOutputFilter DEFLATE
+</FilesMatch>
+</IfModule>
+
+# compress text, html, javascript, css, xml:
+#AddOutputFilterByType DEFLATE text/plain
+#AddOutputFilterByType DEFLATE text/html
+#AddOutputFilterByType DEFLATE text/xml
+#AddOutputFilterByType DEFLATE text/css
+#AddOutputFilterByType DEFLATE application/xml
+#AddOutputFilterByType DEFLATE application/xhtml+xml
+#AddOutputFilterByType DEFLATE application/rss+xml
+#AddOutputFilterByType DEFLATE application/javascript
+#AddOutputFilterByType DEFLATE application/x-javascript
+
+# Or, compress certain file types by extension:
+<files *.html>
+SetOutputFilter DEFLATE
+</files>
